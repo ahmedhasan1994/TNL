@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'poppins','Segoe UI', sans-serif;
+    color: var(--text-color);
+    padding-top: 76px;
+}
+
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+.logo{
+    text-decoration: none;
+    color: #1e7423;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+
+}
+
+.logo:hover{
+    color: #032b05;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #333;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+.Product {
+    background:  whitesmoke;
+    padding-bottom: 100px;
+
+
+}
+
+.Product .content{
+    margin-top: 30px;
+}
+
+.Product-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.Product-card:hover {
+   transform: scale(1.1);
+}
+
+.Product-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.Product-image img{
+    width: 100%
+}
+
+.Product-info {
+    padding: 1em;
+}
+
+.Product-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.Product-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+.about {
+  
+        background:  whitesmoke;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+
+}
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    padding: 0.8rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.form-control {
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+    border-color: var(--secondary-color);
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+    height: 70px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: black;
+  }
+  
+  .foot .copyright p{
+    color: white;
+  }
+  
+  .foot .copyright p span{
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .foot .item {
+    display: flex;
+    column-gap: 30px;
+  }
+  
+  .foot .item a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+  }
+  
+  
+  .foot .item a:hover {
+    color: rgb(119, 107, 107);
+  }
+ .social-icons a {
+        color: #fff;
+        font-size: 2em;
+        padding-right: 30px;
+        font-weight: 600;
+     }
+     
+
+  @media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .product-card {
+        margin-bottom: 2rem;
+    }
+}
